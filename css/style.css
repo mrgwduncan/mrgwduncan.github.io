@@ -1,0 +1,149 @@
+body, html {
+	background-color: #6F2232;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+img {
+	/*padding: 14px 16px;*/
+}
+.panel {
+	left:0px;
+	width: 100%;
+	height: 75%;
+	top: 0px;
+	position:absolute;
+	background-color: #1A1A1D;
+	line-height: 50px;
+	color: #cccccc;
+	text-align: left;	
+}
+.banner {
+	width: 100%;
+	height: 6em;
+	top: 0px;
+	left:0;
+	position:absolute;
+	background-color: #1A1A1D;
+	line-height: 50px;
+	padding-left:10px;
+	color: #cccccc;
+	text-align: left;	
+	z-index:2000;
+}
+.button {
+	background-color: #950740; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	margin: 0 auto;
+}
+.active {
+	background-color:#4E4E50;
+}
+#banner:hover {
+	background-color: #4E4E50;
+}
+.menu-content {
+	position:absolute;
+	background-color: #4E4E50;
+	display:none;
+	width:100%;
+	top:9 em;
+	left:0;
+	z-index: 600;
+	transition: height 3s;
+	padding-left: 5%;
+	padding-top:4.6%;
+	line-height: 2;
+}
+.posts {
+	float:left;
+	padding-right:1%; 
+}
+.posts > h1 {
+	font-family: 'Roboto', sans-serif;
+	line-height:1;
+	font-size: medium;
+}
+.posts > p {
+	line-height: 1;
+	font-size: small;
+}
+.posts > a {
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
+	color: #cccccc;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height:1;
+}
+ul
+{
+    font-family: Arial, Verdana;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li
+{
+    display: block;
+    position: relative;
+    float: left;
+}
+li ul
+{
+    display: none;
+}
+ul li a 
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
+	display: block;
+	color: #950740;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.logo {
+	width:15em;
+	line-height:1.5em;
+}
+.footerimage {
+	bottom:0px;
+	display:block;
+}
+.content {
+	width: 40%;
+	height: 80%;
+	position: absolute;
+	top:15%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left:10%;
+	color: #cccccc;
+	z-index: 1;
+}
+.content > h1 {
+	font-family: 'Dancing Script', cursive;
+		}
+.contentright {
+	display:block;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top:10em;
+	left:55%;
+	right:0;
+	margin: auto;
+	color: #cccccc;
+	z-index:1;
+	background-image:img/main.png;
+}
