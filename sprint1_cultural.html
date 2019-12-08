@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Code Gorilla - code it very hard </title>
+<link href="css\style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<style> 
+</style>
+</head>
+<body>
+	<nav>
+	<div class="banner" id="banner">
+			<ul>
+				<li><a href="index.html"><img src="img/logo-1.png" alt="logo-1" height="50" width="50"></a></li>
+				<li><h1 style="margin-right:2em;">Gareth Duncan</h1></li>
+				<li onclick="toggle('fblog')"><a href="#">Foundations Blog &nbsp&nbsp<i style="font-size:20px" class="fa" id="fb">&#xf0d7;</i></a></li>
+				<li><a href="contacts.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+	</div>
+	<div class="panel">
+	<div class="menu-content" id="fblog">
+		<div class="posts">
+			<a href="sprint1_technical.html">The Story of Te Houtaewa</a>
+		</div>
+		<div class="posts">
+			<a href="sprint2_technical.html">Best pratices Class Vs ID</a>
+		</div>
+        <div class="posts">
+			<a href="sprint3_technical.html">The Story of Te Houtaewa</a>
+		</div>
+        <div class="posts">
+			<a href="sprint4_technical.html">tech4</a>
+		</div>
+		<div class="posts">
+			<a href="sprint1_cultural.html">Values and Strengths</a>
+		</div>
+        <div class="posts">
+			<a href="sprint2_cultural.html">Learning Plan</a>
+	   </div>    
+        <div class="posts">
+			<a href="sprint3_cultural.html">Emotional Intelligence</a>
+	   </div>
+        <div class="posts">
+			<a href="sprint4_cultural.html">Neuroplasticity and Growth Mindset</a>
+	   </div>
+	</div>
+	</nav>
+	<main>
+	<div  class="content">
+	<h1>Values and Strengths </h1>
+        <p>
+            At my previous place of work I we had a set of values amongst them was “we put people first” and “we do the right thing”, most of our clients had a certain amount of time each month they paid for whether it was used or not it built up to a certain degree but had to be used. As consultants we had quoters of chargeable time we had to meet each month, chargeable time is time that the company could bill the client for. The client I was the primary consultant for had an excess of time built up so my boss at the time decided we should spend that time on a UAT refresh, a UAT environment is a copy of the Production environment used to implement changes to the system in isolation to see if the system breaks or behaves as expected after the changes, patches, updates are applied. These changes are tested first by the consultant and then by the users/client. If all goes well the changes are then signed off and make in the production environment and hopefully there is no problems but they have already been tested and if there are problems the company can say we did our duedeilance with testing and not only did we not pick up the problem neither did your testers and you signed off the changes. 
+        </p>
+
+        <p>
+            For this to work properly the UAT environment should be identical to the Production environment but it was almost never the case, over time UAT environment tend to get neglected, people don’t clean up after themselves, multiple attempts to make a patch or feature or update work get left in the system, emergency get made in production and not replicated back in UAT, something critically wrong happens to UAT and it has to be restored from a backup potentially losing changes between the backed up copy and the current copy. UAT system often get out of date and a UAT refresh is ment to fix this. 
+        </p>
+
+        <p>
+            So while I was on holiday, my boss had convinced my client  they needed to refresh their UAT environment which might sound respondable, we had inherited this system from another company, we didn't build the environment or even maintain the environment for the first almost 10 years of its implementation and it was a complete mess, it barely ran, it was full of patches not in production, its error log ate up disk space like nothing else it was a complete and utter mess. However the client was about to receive a massive upgrade from version 10.5 of the software to version 16, The system was so out of date they could not do an in place upgrade just upgrading their current system to version 16 instead they would need a whole new system build on version 16 then their data migrated from their old system to the new one, a lift and shift. 
+        </p>
+
+        <p>
+            My moral dilemma here was that in the coming months there current system would be replaced with the latest and greatest in the software suite and the proposed UAT refresh would also be replaced, The software was very complicated and the refresh process was lengthy, it would require a project to complete our initial estimates were approximately 120 hours  which would cost the over $20,000 and realistically take 2-3 months to implement, not to mention it would require my clients time for testing, change control and the involvement of other vendors/teams on their side of the project incurring even more cost to the client. By the time I would have  completed the UAT refresh they would be ready to start their project to upgrade to version 16.
+        </p>
+
+        <p>
+            It me this was a shameless money grab, working for the sake of working to achieve essentially nothing, it was not putting people first as my client was a very busy woman that really didn't have time to waste testing and doing change controls and project meeting this was a well known fact amongst my team. Also that we weren't “doing the right  thing”.  I raised this with my boss who response was she’s already agreed to do the refresh, just do it. I refused and was able to find more productive work to spend some of the time. A couple of weeks later a colleague of mine brought me an assessment of my clients UAT environment asking me to peer review it, my boss had delegated the work to someone else. While this person was a great fit for the work technically I knew that he was already working at 120% capacity meaning he was already working over his 40 hours a week, he was new to the company, keen to impress and young I was worried about him burning out, I was worried about the quality of work due to fatigue. This work was going ahead if I agreed or not, so I asked him if he’d like me to take this off his plate to which he replied “yeah I really don’t have time for this”. 
+        </p>
+
+        <p>
+            While the client had the upgrade project out to tender, tender meaning they were accepting offers from other companies to do the work/upgrade I was helping them plan and explaining what the upgrade process would likely look like whether we won the tender or not, It wasn’t long before she realized herself that the UAT upgrade would be made almost instantly obsolete and I had to have an uncomfortable conversation about why we were doing the UAT refresh. 
+        </p>
+
+        <p>
+            Ultimately this strengthened mine and her relationship as she realized it was out of my hands, but weakened her relationship with the company and my boss. We didn't end up winning the upgrade I wonder if this played a part in that. 
+        </p>
+
+        <p>
+            This demonstrates I value being fair and honest, standing up for what's right and supporting those in need. which I feel these values come from old school nerd culture, being a child of the internet I grew up online on the internet which was a very different place than what it is today, for a long time the internet was a haven for outcasts, it was our place, our safe space was stuck up for each other, we helped each other, we were good to one another, it was a place we would share and trade information and knowledge, it was a place where your handle/nickname determined who you are and people judged you on your actions alone, not your race, social standing or gender mostly because they had no way of knowing those things. Ahh the good ol days. 
+        </p>
+
+    </div>
+	</main>
+	<footer>
+	<div class="footerimage">
+	</footer>
+</div>
+</body> 
+</html>

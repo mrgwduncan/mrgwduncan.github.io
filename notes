@@ -1,0 +1,77 @@
+<h2>Got blocked on a simple problem</h2>
+    <p>
+        The problem I faced was with using function parameters in dot notation.
+    </p>
+<h2>What was the problem?</h2>
+    <p>
+        I wanted to be able to access a object called gradebook which has child values of students Joseph, Susan, Wiremu, Elizabeth each of them had a testScores value which as a ordered list of their scores. so gradebook.elizabeth.testScores would equal [100, 90, 95, 85]
+    </p>
+    <p>
+        I had a function took 3 paramters addScore(book, student, score), book student and score the book parameter was gradebook, the student value was Susan, the score was 80. I knew I could use the method .push to add score param to the array gradebook.Suscan.testScore, I want to be able to do this.
+    </p>
+    <p>
+        book.student.testScore.push(score) but this was throwing an error, testScore undefined.<br>
+        console.log(gradebook.Susan.testsScore) would return [100, 90, 95, 85]<br>
+        console.log(book.Susan.testsScore) would return [100, 90, 95, 85]<br>
+        gradebook.Suscan.testScore.push(score) Worked ! but I didnt want to hardcode gradebook. <br>
+        <br>
+        This confused me to the point of fustration for a while I couldnt figure out what was going wrong, I started googling and read about someone having some similar problems on stack overflow that suggested using bracet notation might be the answer, after a little research on youtube <br>
+        <br>
+        I found this would do the job done.<br>
+        book[student].testScores.push(score)<br>
+    </p>
+    <p>
+        When know you what terms to google its a powerful tool, but sometimes finding the right question to ask is the hardest part. If my frist set or two of search terms dont return helpful results its good to take a step back and think am I asking the right question, is there a nother way to solve this ?  This is also a good point to consult the duck! explain acutally what your trying to do, while writing the steps down hopefully explaining it will give you a lead, or turn your notes into pesudocode. Peronally I get more out of a good youtube video on a subject than reading peoples blog posts or tech articals, a soild 5-10 mintue video explaining a method or feature is gold to me. I need to pratice being mindful of when to try another technquie and not get too focused on one appourch.
+    </p>
+
+<h2>Solved a problem in an elegant way.</h2>
+    <p>
+        Also during the gradebook challenge we had to get the average of test scores stored in array, I knew I could loop throught the array and add each vaule together, I knew there must be a better or more interesting way of doing this and recalled that in other langeues you could reduce a array of integres to a single value. after a little trail and error and a youtube video about the .reduce method I was able to have a elegant way of adding all the vaules together then dividing them by the number of item in the array with the .length method. 
+    </p>
+    <code>
+    function average(arr){<br>
+    sum = arr.reduce((acc, val) => acc + val);<br>
+    return(sum / arr.length)<br>
+    }<br>
+    </code>
+    <p> 
+        I learnt about arrow function syntax away of writing a function inline and the reduce method was more complex than I intilly thought aswell, I didnt expect to have to pass a accumulator and currentValue to the reduce method.<br>
+        It felt rewarding to find a more elegent way to write this and I enjoyed learning about new techniques
+    </p>
+
+<h2>Reflect on how confident you feel using the problem solving techniques and process:</h2>
+
+<h3>Pseudocode</h3>
+    <p>
+        I need to use this technquie more, I tend to write notes about what im trying to do more than plan out the code that way. 
+    </p>
+
+<h3>Trying something</h3>
+    <p>
+        I'm a big fan of try something, I do alot of trying, its a good place to start but its not a good place to stay. Rubber ducky method When I get "stuck" on a problem I find this apporuch really useful, I like talking to myself :P 
+    </p>
+        
+<h3>Reading error messages</h3>
+    <p>
+        I've had alot of pratice reading error messages in the past as useful as they can be, I find its easy to fixate on a error message then the problem is not understanding what you've ask the code to do. 
+    </p>
+
+<h3>Console.logging</h3>
+    <p>
+        always be console logging, I use this alot to check the stat of a value.
+    </p>
+
+<h3>Googling</h3>
+    <p>
+        This is my go to way to solve problems, google to find some technqual documentation and then a youtube video and I'm normally away ! If im asking the right question :)
+    </p>
+
+<h3>Asking your peers for help</h3>
+    <p>
+        I havent had too do this while on foundations, but once we are at bootcamp I'll be comfortable with asking my peers. 
+    </p>
+<h3>Asking coaches for help</h3>
+    <p>
+        I figure the coaches have a lot to do, this will be a last result for me, I want to be going to the coaches with a lists of things I've tried and a good idea of what im trying to achive. 
+    </p>
+
