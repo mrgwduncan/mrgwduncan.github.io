@@ -12,59 +12,360 @@
 </head>
 <body>
 	<nav>
-	<div class="banner" id="banner">
-			<ul>
-				<li><a href="index.html"><img src="img/logo-1.png" alt="logo-1" height="50" width="50"></a></li>
-				<li><h1 style="margin-right:2em;">Gareth Duncan</h1></li>
-				<li onclick="toggle('fblog')"><a href="#">Foundations Blog &nbsp&nbsp<i style="font-size:20px" class="fa" id="fb">&#xf0d7;</i></a></li>
-				<li><a href="contacts.html">Contact</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-	</div>
-	<div class="panel">
-	<div class="menu-content" id="fblog">
-		<div class="posts">
-			<a href="sprint1_technical.html">The Story of Te Houtaewa</a>
-		</div>
-		<div class="posts">
-			<a href="sprint2_technical.html">Best pratices Class Vs ID</a>
-		</div>
-        <div class="posts">
-			<a href="sprint3_technical.html">The Story of Te Houtaewa</a>
-		</div>
-        <div class="posts">
-			<a href="sprint4_technical.html">tech4</a>
-		</div>
-		<div class="posts">
-			<a href="sprint1_cultural.html">Values and Strengths</a>
-		</div>
-        <div class="posts">
-			<a href="sprint2_cultural.html">Learning Plan</a>
-	   </div>    
-        <div class="posts">
-			<a href="sprint3_cultural.html">Emotional Intelligence</a>
-	   </div>
-        <div class="posts">
-			<a href="sprint4_cultural.html">Neuroplasticity and Growth Mindset</a>
-	   </div>
-	</div>
+        <div class="banner" id="banner">
+                <ul>
+                    <li><a href="#"><img src="img/logo-1.png" alt="logo-1" height="50" width="50" onclick="loadGrid()"></a></li>
+                    <li><h1 style="margin-right:2em;">Gareth Duncan</h1></li>
+                    <li onclick="toggle('fblog')"><a href="#">Foundations Blog &nbsp&nbsp<i style="font-size:20px" class="fa" id="fb">&#xf0d7;</i></a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+        </div>
+        <div class="panel">
+            <div class="menu-content" id="fblog">
+                <div class="posts" onclick="maximize('blogpost1')">
+                    <a href="#">The Story of Te Houtaewa</a>
+                </div>
+                <div class="posts" onclick="maximize('blogpost2')">
+                    <a href="#">Values and Strengths</a>
+                </div>
+                <div class="posts" onclick="maximize('blogpost3')">
+                   <a href="#">Learning Plan</a>
+                </div>
+                <div class="posts" onclick="maximize('blogpost4')">
+                    <a href="#">Classes vs. IDs</a>
+                </div>
+                <div class="posts"  onclick="maximize('blogpost5')">
+                    <a href="#">Emotional Intelligence</a>
+                </div>
+                <div class="posts" onclick="maximize('blogpost6')">
+                    <a href="#">Learning JavaScript</a>
+               </div>    
+                <div class="posts" onclick="maximize('blogpost7')">
+                   <a href="#">Neuroplasticity and Growth Mindset</a>
+               </div>
+                <div class="posts" onclick="maximize('blogpost8')">
+                    <a href="#">Javascript Kata</a>
+               </div>
+                <div class="posts" onclick="maximize('blogpost9')">
+                    <a href="#">place2</a>
+               </div>
+                <div class="posts" onclick="maximize('blogpost10')">
+                    <a href="#">place3</a>
+                    <a href="#">place3</a>
+               </div>
+                
+            </div>
+        </div>
 	</nav>
+
 	<main>
-	<div  class="content">
-	<h1>Kia ora Taiao! (Hello World!)</h1>
-	<p>This is the beginning of my website home page.
-	It will eventually contain a list of links to all my blogs.</p>
-	<br>
-	<br>
-	<button class="button" onclick="toggle('fblog')"> Blog Posts </button>
-	</div>
-	<div class="contentright">
-	<img src="img/main.png" alt="" width="400" height="400">
-	</div>
-	</main>
+        <div class="flexBox">
+        <div class="splash" id="splash">
+            <h1>Kia ora Taiao! (Hello World!)</h1>
+            <p>
+                Welcome to my website for Dev Academy Foundations 2019-2020, This is where I'll pratice html, CSS, and Javascript and post blog enteries for the course material. 
+            </p>
+            	<br>
+                <br>
+                <div class="splashimg">
+                    <img src="img/main.png" alt="" width="400" height="400">
+                </div>
+                <br>
+                <br>
+                <button class="button" onclick="loadGrid()"> Blog Posts</button>
+                
+                </div>
+            <div class="blogpost tile tilehidden" id="blogpost1" onclick="maximize('blogpost1')">
+                <h1>The Story of Te Houtaewa </h1>
+                <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> </h2>
+                <h3>10 November 2010</h3>
+                <p>
+                  Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+                </p>
+                <p>
+                  Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
+                </p>
+                <p>
+                  While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
+                </p>
+                
+            </div>
+            <div class="blogpost tile tilehidden" id="blogpost2" onclick="maximize('blogpost2')">
+            <h1>Values and Strengths </h1>
+                <p>
+                    At my previous place of work I we had a set of values amongst them was “we put people first” and “we do the right thing”, most of our clients had a certain amount of time each month they paid for whether it was used or not it built up to a certain degree but had to be used. As consultants we had quoters of chargeable time we had to meet each month, chargeable time is time that the company could bill the client for. The client I was the primary consultant for had an excess of time built up so my boss at the time decided we should spend that time on a UAT refresh, a UAT environment is a copy of the Production environment used to implement changes to the system in isolation to see if the system breaks or behaves as expected after the changes, patches, updates are applied. These changes are tested first by the consultant and then by the users/client. If all goes well the changes are then signed off and make in the production environment and hopefully there is no problems but they have already been tested and if there are problems the company can say we did our duedeilance with testing and not only did we not pick up the problem neither did your testers and you signed off the changes. 
+                </p>
+
+                <p>
+                    For this to work properly the UAT environment should be identical to the Production environment but it was almost never the case, over time UAT environment tend to get neglected, people don’t clean up after themselves, multiple attempts to make a patch or feature or update work get left in the system, emergency get made in production and not replicated back in UAT, something critically wrong happens to UAT and it has to be restored from a backup potentially losing changes between the backed up copy and the current copy. UAT system often get out of date and a UAT refresh is ment to fix this. 
+                </p>
+
+                <p>
+                    So while I was on holiday, my boss had convinced my client  they needed to refresh their UAT environment which might sound respondable, we had inherited this system from another company, we didn't build the environment or even maintain the environment for the first almost 10 years of its implementation and it was a complete mess, it barely ran, it was full of patches not in production, its error log ate up disk space like nothing else it was a complete and utter mess. However the client was about to receive a massive upgrade from version 10.5 of the software to version 16, The system was so out of date they could not do an in place upgrade just upgrading their current system to version 16 instead they would need a whole new system build on version 16 then their data migrated from their old system to the new one, a lift and shift. 
+                </p>
+
+                <p>
+                    My moral dilemma here was that in the coming months there current system would be replaced with the latest and greatest in the software suite and the proposed UAT refresh would also be replaced, The software was very complicated and the refresh process was lengthy, it would require a project to complete our initial estimates were approximately 120 hours  which would cost the over $20,000 and realistically take 2-3 months to implement, not to mention it would require my clients time for testing, change control and the involvement of other vendors/teams on their side of the project incurring even more cost to the client. By the time I would have  completed the UAT refresh they would be ready to start their project to upgrade to version 16.
+                </p>
+
+                <p>
+                    It me this was a shameless money grab, working for the sake of working to achieve essentially nothing, it was not putting people first as my client was a very busy woman that really didn't have time to waste testing and doing change controls and project meeting this was a well known fact amongst my team. Also that we weren't “doing the right  thing”.  I raised this with my boss who response was she’s already agreed to do the refresh, just do it. I refused and was able to find more productive work to spend some of the time. A couple of weeks later a colleague of mine brought me an assessment of my clients UAT environment asking me to peer review it, my boss had delegated the work to someone else. While this person was a great fit for the work technically I knew that he was already working at 120% capacity meaning he was already working over his 40 hours a week, he was new to the company, keen to impress and young I was worried about him burning out, I was worried about the quality of work due to fatigue. This work was going ahead if I agreed or not, so I asked him if he’d like me to take this off his plate to which he replied “yeah I really don’t have time for this”. 
+                </p>
+
+                <p>
+                    While the client had the upgrade project out to tender, tender meaning they were accepting offers from other companies to do the work/upgrade I was helping them plan and explaining what the upgrade process would likely look like whether we won the tender or not, It wasn’t long before she realized herself that the UAT upgrade would be made almost instantly obsolete and I had to have an uncomfortable conversation about why we were doing the UAT refresh. 
+                </p>
+
+                <p>
+                    Ultimately this strengthened mine and her relationship as she realized it was out of my hands, but weakened her relationship with the company and my boss. We didn't end up winning the upgrade I wonder if this played a part in that. 
+                </p>
+
+                <p>
+                    This demonstrates I value being fair and honest, standing up for what's right and supporting those in need. which I feel these values come from old school nerd culture, being a child of the internet I grew up online on the internet which was a very different place than what it is today, for a long time the internet was a haven for outcasts, it was our place, our safe space was stuck up for each other, we helped each other, we were good to one another, it was a place we would share and trade information and knowledge, it was a place where your handle/nickname determined who you are and people judged you on your actions alone, not your race, social standing or gender mostly because they had no way of knowing those things. Ahh the good ol days. 
+                </p>
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost3" onclick="maximize('blogpost3')">
+            <h1>Learning Plan</h1>
+                <p>
+                    I want to write code for a living, preferably from home as much as possible. I like the idea of creativing for a living while still having problems to find solutions for. 
+                </p>
+                <p>
+                    As for soft skills I’m not sure, I know when put in a work or social environment I can “turn it on” and participate as part of a team, interact with clients and build relationships I just don't enjoy doing it and read having to maybe I can find a way to be more accepting and less fearful of those situations. 
+                </p> 
+                <p>    
+                    When I come to strengths and weaknesses I’ve a wealth of technical knowledge, I’ve always been a fast learner and have a  passion for writing code. However Fairly full on social Anxiety which is worse when communicating with people online which I’ve recently started medicating for which will hopefully reduce the impact this has on me, I also struggle with following written instructions and writing about non technical topics, especially writing about myself. 
+                </p> 
+                <p>
+                    To help me study I’ll have to remove distractions to help me focus,I have a spare laptop if Im struggling with too much distraction from stuff installed on this laptop I’ll set it up and use it for study only. I’ll also give myself a timetable to follow even if I’m completing the work ahead of schedule and somehow try and overcome my fear of interaction with people online.
+                </p>
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost4" onclick="maximize('blogpost4')">
+            <h1>Classes vs. IDs</h1>
+                <p>
+                    Both classes and ID allow attributes to be applied to an element of html.for example if we had a class called blogpost and in the css we stated background-color:blackthen we had a div element with the class="blogpost" will have a black background. This is the same for id, if we define the id firstpost to have a black ground in the css then a div element with id="firstpost" will have a black background. 
+                </p>
+                <p>
+                    However a elemental wether it be a div, p, span, h1 can only have 1 ID but mutliple classes and a ID should be unique where a class can but reused on multiple elements of a page. a good example could be the class blogpost would be apporiate to style all your blogposts on your site, defining attributes like font, height, width, background color and postion, each blogpost would have the class="blogpost", you might have a second class that changes the colors of the most recent blog post to highlight its importance class="blogpost recent". An apporiate use of the id tag in this example would be to have each post have a sequential number in the id like id="post1" for the first post and id="post2" for the second post and so fourth. 
+                </p>
+                <p>
+                    Once you start using javascript to controll your page ID really start to shine with functions like getElementById, say you wanted to have a button to hide all your posts expect the one the person is reading, you might have javascript change the display attribute to none on all the blog posts 
+                    here some pusdo code for an example: 
+                </p>
+                <code>
+                   var post = ["post1", "post2", "post3", "post4", "post5", "post6"];<br> 
+                   function hideposts(postid) {<br>
+                   var divId, i;<br>
+                   x = postid;<br>
+
+                   for(i = 0; i < divs.length; i++) {<br>
+                   Id = post[i];<br>
+                   div = document.getElementById(Id); <br>
+                   if(Id == x) {<br>
+                   div.style.display = "block";<br>
+                    }<br>
+                    else {<br>
+                    div.style.display = "none"} <br>
+                       }<br>
+                    }<br>
+                </code>
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost5" onclick="maximize('blogpost5')">
+            <h1>Emotional Intelligence</h1>
+            <p>
+                EQ has been linked to success, if you look at a company like google they higher mostly people with a very high IQ but have found that amongst them those that are more successful have a high EQ as well. Universities in the united states have seen that their alumni that donate the most back to the university has not necessarily scored the highest on their S.A.T but have been in leadership roles and high active in social clubs or even very enterpernial at a young age, they have a high EQ.
+            </p>
+            <p> 
+                to be productive in the workplace it's important to be able to work in a team, to not get derailed by your emotions and me able to express yourself these are all qualities of EQ 
+            </p>
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost6" onclick="maximize('blogpost6')">
+            <h1>Learning JavaScript </h1>
+            <h2>xplain control flow and loops</h2>
+
+            <p>
+                Control flow is the order that  a program runs code and execution contexts are created, which is determined by the lexical environment (written order and location of code). For, while and do while loops  affect the control flow because the while looping through no other action may be taken as javascript is synchronous.
+            </p>
+
+            <p>
+                To relate this to the car analogy above 
+            </p>
+            <code>
+                Function accelerate (speedLimit) <br>
+                If  (ignition === on ) { <br>
+                Let speed = 0 <br>
+                While (speed < speedLimit) <br>
+                speed ++ <br>
+                } <br>
+            </code>
+            <br>
+            <p>
+                If the car is turned on, accelerate to the speed limit, however this example is not the best as the car can still do other actions while accelerating, like turn or brake cars are asynchronous. 
+            </p>
+
+            <h2>Describe what the DOM is and an example of how you might interact with it.</h2>
+
+            <p>
+                The Dom is the Document Object model, which is a programming interface to html which is stored as an object in Javascript. We can modify parts of the html/dom using javascript for example document.getElementById(“blogpostOne”).classList.add(“active”) This could add the class active to the element with the id blogpostone, Document being the DOM then selecting blogpostone and adding active to the list of classes on blogpostone.  
+            </p>
+
+            <h2>Explain the difference between accessing data from arrays and objects </h2>
+            <p>
+                An array is an ordered list of values, they can be primitives, objects  and functions  or even another array separated by commas. <br>
+                <br>
+                Let's keep it simple with a list of cars <br>
+                brandsOfCars=[”bmw”, ”tesla”, “toyota”, “ford”, “holden”]<br>
+
+                <br>
+                You can refer to items in the list by putting the key value between square brackets, the list starts at 0 so bmw would be <br>
+                <br>
+                brandOfCars[0] <br>
+                <br>
+                There are built in methods for arrays for example length which will tell you how many items in the array. <br>
+                <br>
+                brandOfCars.length would return 5<br>
+                Object are a little different however they are a list of key value pairs which are referred to by  the key rather than the index (the position in the list) <br>
+                <br>
+                Let Car = {<br>
+                “Brand”: “Tesla”<br>
+                “model”:”Roadster”<br>
+                “Wheels”: 4<br>
+                “Price”:  200000<br>
+                }<br>
+                <br>
+                So we can now get the brand of the car by using car.brand or the model by car.model<br>
+            </p>
+            <br>
+            <h2>So what’s the difference, and when do we use these different data storage techniques?</h2>
+            <p>
+                Objects are used to store things with properties where arrays are used to store list of data in a single variable.  
+            </p>
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost7" onclick="maximize('blogpost7')">
+            <h1>Neuroplasticity and Growth Mindset</h1>
+                <p>
+                    Neuroplasticity also known as brain plasticity, is amazing I was one of these people that believed that once you'd reached a certain age learning knew things would become harder because your brain had finished growthing, The Idea of contuniuing to learn contunes to shape and mold the brian makes sense and is good news!  The really mind blowing part is that thinking your how threw physical acutivities can have a similar effect on the brain is acutally doing them, this makes reflecting on a days work and thinking through that you've learnt to do a excellent way to strengthen your understanding of something. 
+                </p>
+                <p>
+                    I really want to adpot this Growth mindset, The idea that when people believe they can get smarter, they understand that effort makes them stronger. so they put in extra time and effort, and that leads to higher achievements, the more you learn about learning the better you become at it, that challenging yourself makes you smarter. 
+                </p>
+                <p>
+                    Combinding both this growth mindset and the knowledge that out brains continue to learn and grow means that if you just stick at something and put the time and effort in you can learn how to master it.   
+                </p>
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost8" onclick="maximize('blogpost8')">
+                <h1>Javascript Kata</h1>
+                <h2>Got blocked on a simple problem</h2>
+                    <p>
+                        The problem I faced was with using function parameters in dot notation.
+                    </p>
+                <h2>What was the problem?</h2>
+                    <p>
+                        I wanted to be able to access an object called gradebook which has child values of students Joseph, Susan, Wiremu, Elizabeth each of them had a testScores value which as an ordered list of their scores. so gradebook.elizabeth.testScores would equal [100, 90, 95, 85]
+                    </p>
+                    <p>
+                        I had a function took 3 parameters addScore(book, student, score), book student and score the book parameter was gradebook, the student value was Susan, the score was 80. I knew I could use the method push to add score param to the array gradebook.Suscan.testScore, I want to be able to do this.
+                    </p>
+                    <p>
+                        book.student.testScore.push(score) but this was throwing an error, testScore undefined.<br>
+                        console.log(gradebook.Susan.testsScore) would return [100, 90, 95, 85]<br>
+                        console.log(book.Susan.testsScore) would return [100, 90, 95, 85]<br>
+                        gradebook.Suscan.testScore.push(score) Worked ! but I didn't want to hardcode gradebook. <br>
+                        <br>
+                        This confused me to the point of frustration for a while I couldn't figure out what was going wrong, I started googling and read about someone having some similar problems on stack overflow that suggested using bracket notation might be the answer, after a little research on youtube <br>
+                        <br>
+                        I found this would do the job done.<br>
+                        book[student].testScores.push(score)<br>
+                    </p>
+                    <p>
+                        When you know what terms to google its a powerful tool, but sometimes finding the right question to ask is the hardest part. If my frist set or two of search terms do not return helpful results it's good to take a step back and think am I asking the right question, is there another way to solve this ?  This is also a good point to consult the duck! explain actually what your trying to do, while writing the steps down hopefully explaining it will give you a lead, or turn your notes into pseudocode. Personally I get more out of a good youtube video on a subject than reading people's blog posts or tech articles, a solid 5-10 minute video explaining a method or feature is gold to me. I need to practice being mindful of when to try another technique and not get too focused on one approach.
+                    </p>
+
+                <h2>Solved a problem in an elegant way.</h2>
+                    <p>
+                        Also during the gradebook challenge we had to get the average of test scores stored in array, I knew I could loop through the array and add each value together, I knew there must be a better or more interesting way of doing this and recalled that in other languages you could reduce an array of integers to a single value. after a little trial and error and youtube video about the reduce method I was able to have an elegant way of adding all the values together then dividing them by the number of items in the array with the length method. 
+                    </p>
+                    <code>
+                    function average(arr){<br>
+                    sum = arr.reduce((acc, val) => acc + val);<br>
+                    return(sum / arr.length)<br>
+                    }<br>
+                    </code>
+                    <p> 
+                        I learnt about arrow function syntax away of writing a function inline and the reduce method was more complex than I initially thought as well, I didn't expect to have to pass an accumulator and currentValue to the reduce method.<br>
+                        It felt rewarding to find a more elegant way to write this and I enjoyed learning about new techniques
+                    </p>
+
+                <h2>Reflect on how confident you feel using the problem solving techniques and process:</h2>
+
+                <h3>Pseudocode</h3>
+                    <p>
+                        I need to use this technique more, I tend to write notes about what im trying to do more than plan out the code that way. 
+                    </p>
+
+                <h3>Trying something</h3>
+                    <p>
+                        I'm a big fan of try something, I do a lot of trying, it's a good place to start but its not a good place to stay. Rubber ducky method When I get "stuck" on a problem I find this approach really useful, I like talking to myself :P 
+                    </p>
+
+                <h3>Reading error messages</h3>
+                    <p>
+                        I've had a lot of practice reading error messages in the past as useful as they can be, I find it's easy to fixate on an error message then the problem is not understanding what you've asked the code to do. 
+                    </p>
+
+                <h3>Console.logging</h3>
+                    <p>
+                        always be console logging, I use this a lot to check the stat of a value.
+                    </p>
+
+                <h3>Googling</h3>
+                    <p>
+                        This is my go to way to solve problems, google to find some technical documentation and then a youtube video and I'm normally away ! If im asking the right question :)
+                    </p>
+
+                <h3>Asking your peers for help</h3>
+                    <p>
+                        I haven't had to do this while on foundations, but once we are at bootcamp I'll be comfortable with asking my peers. 
+                    </p>
+                <h3>Asking coaches for help</h3>
+                    <p>
+                        I figure the coaches have a lot to do, this will be a last result for me, I want to be going to the coaches with a list of things I've tried and a good idea of what im trying to achieve. 
+                    </p>
+
+
+        </div>
+        <div class="blogpost tile tilehidden" id="blogpost9" onclick="maximize('blogpost9')">
+                <h1>The Story of Te Houtaewa </h1>
+                <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> </h2>
+                <h3>10 November 2010</h3>
+                <p>
+                  Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+                </p>
+                <p>
+                  Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
+                </p>
+                <p>
+                  While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
+                </p>
+            </div>
+        <div class="blogpost tile tilehidden" id="blogpost10" onclick="maximize('blogpost10')">
+                <h1>The Story of Te Houtaewa </h1>
+                <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> </h2>
+                <h3>10 November 2010</h3>
+                <p>
+                  Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+                </p>
+                <p>
+                  Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
+                </p>
+                <p>
+                  While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
+                </p>
+            </div>
+        </div>
+    </main>
 	<footer>
-	<div class="footerimage">
+	<div class="footerimage"></div>
 	</footer>
-</div>
 </body> 
 </html>
